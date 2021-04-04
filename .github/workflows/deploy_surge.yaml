@@ -30,8 +30,8 @@ jobs:
         with:
           node-version: 15
       - name: Install Surge
-         run: npm install --g surge
+        run: npm install -g surge
       - name: Run Surge
-         run: surge ./ nasir-project1.surge.sh --token ${{secrets.SURGE_TOKEN}}
+        run: surge ./ nasir-project1.surge.sh --token ${{secrets.SURGE_TOKEN}}
         
      
